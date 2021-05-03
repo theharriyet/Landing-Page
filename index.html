@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <title>Landing Page</title>
+    <script src= "javascript/jquery-3.6.0.js"></script> 
+    <link rel="stylesheet" type="text/css" href= "css/style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet"> 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Slogan結構 -->    
+    <div class="slogan" id="section1">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-6 brand">
+                    <span>Politocal Palette</span>
+                        <br>
+                        <p>
+                            LET THE COLORS 
+                            <br>
+                            BREAK THE COLLARS
+                        </p>
+                </div>
+
+                <div class="col-lg-6 product">
+                    <img src="img/extension.png">  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About結構 -->    
+    <div class="about" id="section2">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-6 product2">
+                    <img src="img/lala.png">  
+                </div>
+
+                <div class="col-lg-6 describe">
+                    <span>About Politocal Palette</span>
+                        <br>
+                        <p>
+                            Do you have problem detecting political stances behind the news you read everyday? Sick and tired of this kind of situation?
+                            Well, here is a Goole Extension that may easily solve your problem! With just one click on the small icon on the upper right of Chrome, Politocal Palette will quickly use AI techniques such as "key term analysis" and "sentiment analysis" to help you understand the stances of one article. Isn't it great? 
+                            If you like it, please click the link below.
+                        </p>
+                        <br>
+                    <button type="button">Click to Download</button>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+    <!--Advantage結構-->
+    <div class="advantage" id="section3">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<p class="title text-center">If you have Political Palette you can...</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="card">
+						<img src="img/clock.png">
+						<p class="advantage_name text-right">Time saving</p>
+                            <br>
+                        <p class="advantage_content text right">It takes only one click to activate our product, and only 2 seconds to give you the result.</p>
+					</div>
+				</div>
+            
+				<div class="col-lg-4">
+					<div class="card">
+						<img src="img/check.png">
+						<p class="advantage_name text-right">Accurate</p>
+                            <br>
+                        <p class= "advantage_content text right">With the use of AI and big data, we are able to give you accurate stances of news article.</p>
+					</div>
+				</div>
+			
+				<div class="col-lg-4">
+					<div class="card">
+						<img src="img/star.png">
+						<p class="advantage_name text-right">Free and Easy</p>
+                            <br>
+                        <p class="advantage_content text right">Just search "Political Palette" and click download, you will have the best experience using our product.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+    
+    <!--Common Question結構-->
+    <div class="question" id="section4">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<p class="title text-center">Common Questions</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12">
+					<div class="QA">
+                        <button class="accordion">Where can I download this product?</button>
+                           <div class="panel">
+                              <p>Please go to Chrome Web Store and search "Political Palette", after clicking into our page, you will see the download button. Click it and everything is done.</p>
+                           </div>
+
+                        <button class="accordion">What do the colors mean?</button>
+                           <div class="panel">
+                              <p>Red means the Chinese Community party.<br>Blue means KMT.<br>Green means DPP.<br>Yellow means New Power Party.<br>White means Taiwan People's Party.</p>
+                           </div>
+
+                        <button class="accordion">What is the meaning of the numbers?</button>
+                           <div class="panel">
+                              <p>If the number is negative then the news does not favor one particular party.In contrast, if the number is positive then the news favor one particular party.
+                            </p>
+                           </div>
+                            
+                        <button class="accordion">Does this product cost me any money?</button>
+                            <div class="panel">
+                              <p>No, it's totally free! It's great, isn't it?</p>
+                            </div>
+
+                        <button class="accordion">Who is the developer of this product?</button>
+                            <div class="panel">
+                              <p>This is the product created by a group of students from NYCu in the 2020 Meichu Hackthon Contest.</p>
+                            </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+  <footer>
+    <p>Author: Harriet Huang<br>
+    <a href="https://chrome.google.com/webstore/category/extensions?hl=zh-TW"></a>Political Palette</p>
+  </footer>
+
+    <!-- JS連結 -->
+    <script src="js/jQuery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+            } else {
+               panel.style.maxHeight = panel.scrollHeight + "px";
+                 } 
+               });
+            }
+    </script>
+
+  
+  </body>
+</html>

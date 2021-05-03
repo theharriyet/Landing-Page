@@ -1,0 +1,242 @@
+html{
+	width: 100%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+/*Slogan*/
+.slogan{
+    height: 600px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 11.36%, rgba(255, 252, 170, 0.414966) 47.4%, #E0F9FF 87.05%, rgba(224, 249, 255, 0) 100%);
+}
+
+.slogan .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.brand{
+    margin: 100px;
+    margin-left: 0;
+    padding-top: 30px;
+}
+
+.brand span{
+    font-weight: bold;
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: rgb(155, 155, 155);
+}
+
+.brand p{
+    font-weight: bolder;
+    font-family: 'Righteous', cursive;
+    font-size: 55px;
+    letter-spacing: 2px;
+}
+
+.slogan img{
+    width: 300px;
+}
+
+
+/*About*/
+.about{
+    height: 500px;
+    margin-top: 80px;
+}
+
+.about .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product2{
+    margin: 30px;
+    margin-left: 220px;
+    margin-right: 50px;
+}
+
+.about img{
+    width: 300px;
+}
+
+.describe{
+    margin-right: 220px;
+    margin-left: 50px;
+    padding-top: 35px;
+}
+
+.describe span{
+    font-weight: bold;
+    font-family: 'Righteous', cursive;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: rgb(133, 133, 133);
+}
+
+.describe p{
+    font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    white-space: pre-line;
+    word-wrap:break-word;
+    letter-spacing: 1px;
+    line-height: 1.75;
+    color: rgb(73, 73, 73);
+}
+
+.describe button{
+    background-color: rgb(160, 205, 226);
+    color: rgb(255, 255, 255);
+    font-family: 'Righteous', cursive;
+    border-radius: 30px;
+    border-style: hidden;
+    width: 200px;
+    height: 45px;
+}
+
+
+/*advantage*/
+.advantage {
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 11.36%, rgba(255, 216, 170, 0.414966) 44.06%, #FFE0E6 85.73%, rgba(255, 224, 230, 0) 100%);
+	margin-top: 80px;
+    height: 600px;
+}
+
+.advantage .title{
+    font-family: 'Righteous', cursive;
+    color: rgb(133, 133, 133);
+    font-size: 40px;
+}
+
+.advantage .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantage .card {
+	margin: 20px;
+    margin-top: 20px;
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+}
+.advantage img {
+	width: 60px;
+	margin-top: 20px;
+}
+
+.advantage img:hover {
+	opacity: 0.8;
+}
+
+.advantage_name {
+	padding-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    font-family: 'Righteous', cursive;
+    font-size: 18px;
+    color: rgb(73, 73, 73);
+
+}
+
+.advantage_content {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    margin-top: 0;
+    margin-left: 10px;
+    font-weight: bold;
+    color: rgb(73, 73, 73);
+}
+
+/*question*/
+.question {
+	margin-top: 80px;
+    height: 650px;
+}
+
+.question .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.question .title{
+    font-family: 'Righteous', cursive;
+    color: rgb(133, 133, 133);
+    font-size: 40px;
+}
+
+.QA{
+    margin-top: 20px;
+    width: 600px;
+}
+
+.accordion {
+    background-color: rgb(250, 242, 168);
+    color: #444;
+    font-family: 'Righteous', cursive;
+    cursor: pointer;
+    padding: 18px;
+    width: 600px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+  
+.active, .accordion:hover {
+    background-color: rgb(241, 253, 188);
+}
+  
+.accordion:after {
+    content: '\002B';
+    color: rgb(185, 185, 185);
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "\2212";
+}
+  
+.panel {
+    padding: 0 18px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(73, 73, 73);
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(210, 189, 228);
+    color: rgb(110, 110, 110);
+    font-size: 16px;
+    font-family: 'Righteous', cursive;
+}
